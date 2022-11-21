@@ -1,4 +1,4 @@
-# Arduino for Linux
+# Arduino IDE for Linux
 Installation:
 ```bash
 git clone https://github.com/vitorkoch/arduino4linux.git

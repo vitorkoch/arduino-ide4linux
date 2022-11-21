@@ -1,3 +1,4 @@
+#! /bin/bash
 INSTALLATION_FOLDER="${HOME}/arduino-ide"
 sudo echo "Sudo Mode"
 
@@ -21,6 +22,15 @@ else
 fi
 
 echo "Troubleshoting..."
+echo "Showing usb connections"
+lsusb
 echo "Adding user ${USER} to tty and dialout groups"
+sudo adduser $USER tty
 sudo usermod -a -G tty $USER
+sudo adduser $USER dialout
 sudo usermod -a -G dialout $USER
+echo "Giving Arduino IDE full permission"
+sudo chmod +777 $HOME/arduino-ide/arduino-ide/arduino-ide
+echo "Adding full permission to all ports"
+sudo chmod +777 /dev/tty*
+echo "If you don't use a braille display run 'brltty-purge.sh'"

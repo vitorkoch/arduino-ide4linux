@@ -1,8 +1,8 @@
 # Arduino IDE for Linux
 Installation:
 ```bash
-git clone https://github.com/vitorkoch/arduino4linux.git
-cd arduino4linux
+git clone https://github.com/vitorkoch/arduino-ide4linux.git
+cd arduino-ide4linux
 ./install.sh
 ./brltty-purge.sh # Only if you don't use a braille display
 ```

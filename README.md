@@ -14,5 +14,5 @@ Features:
 5. Add user to tty and dialout groups
 6. Give full permission to Arduino IDE
 7. Give full permission to all ports
-
+8. Remove a buggy daemon (brltty-purge.sh)
 For rerun troubleshoting: `./install.sh`

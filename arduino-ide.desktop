@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-Name=Arduino IDE
+Name=Arduino IDE 2
 Terminal=false
 Exec=sh -c "./arduino-ide/arduino-ide/arduino-ide"
 Icon=/usr/share/icons/arduino-ide.png

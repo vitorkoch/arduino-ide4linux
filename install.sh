@@ -10,9 +10,9 @@ echo "Installing..."
 if [ -d "arduino-ide/" ]; then
   echo "Already installed, if want to reinstall remove arduino-ide from your home folder"
 else
-  wget -O arduino.zip https://github.com/arduino/arduino-ide/releases/download/2.0.2/arduino-ide_2.0.2_Linux_64bit.zip
-  unzip arduino.zip
-  mv arduino-ide_2.0.2_Linux_64bit arduino-ide
+  wget -O arduino.zip https://downloads.arduino.cc/arduino-ide/arduino-ide_2.2.0_Linux_64bit.zip
+  unzip arduino-ide-download.zip
+  mv arduino-ide_2.2.0_Linux_64bit arduino-ide
 fi
 
 # Add the icon to system wide

@@ -2,12 +2,6 @@
 INSTALLATION_FOLDER="${HOME}/arduino-ide"
 sudo echo "Sudo Mode"
 
-# Add the icon to system wide
-sudo cp arduino-ide.png /usr/share/icons
-
-# Add Arduino IDE to application menu
-cp arduino-ide.desktop $HOME/.local/share/applications/
-
 # Create the installation folder e enter in it
 mkdir $INSTALLATION_FOLDER || echo "Installation folder already created"
 cd $INSTALLATION_FOLDER
@@ -20,6 +14,12 @@ else
   unzip arduino.zip
   mv arduino-ide_2.0.2_Linux_64bit arduino-ide
 fi
+
+# Add the icon to system wide
+sudo cp arduino-ide.png /usr/share/icons
+
+# Add Arduino IDE to application menu
+cp arduino-ide.desktop $HOME/.local/share/applications/
 
 echo "Troubleshoting..."
 echo "Showing usb connections"
